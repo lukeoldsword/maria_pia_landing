@@ -16,17 +16,18 @@ mobileMenu.querySelectorAll("a").forEach(a => {
 });
 
 // Smooth scroll
-document.querySelectorAll("a[href^=\"#\"]").forEach(a => {
-    a.addEventListener("click", e => {
-        const href = a.getAttribute("href");
-        if (href === "#") return;
-        const target = document.querySelector(href);
-        if (!target) return;
-        e.preventDefault();
-        const top = target.getBoundingClientRect().top + window.pageYOffset - 76;
-        window.scrollTo({top, behavior: "smooth"});
-    });
-});
+// document.querySelectorAll("a[href^=\"#\"]").forEach(a => {
+//     a.addEventListener("click", e => {
+//         console.log("Smooth scroll");
+//         const href = a.getAttribute("href");
+//         if (href === "#") return;
+//         const target = document.querySelector(href);
+//         if (!target) return;
+//         e.preventDefault();
+//         const top = target.getBoundingClientRect().top + window.pageYOffset - 76;
+//         window.scrollTo({top, behavior: "smooth"});
+//     });
+// });
 
 // Date min
 const dateInput = document.getElementById("b-date");
