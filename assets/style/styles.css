@@ -222,7 +222,8 @@ strong {
     display: block;
     width: 22px;
     height: 2px;
-    background: var(--fg);
+    background: currentcolor;
+    forced-color-adjust: preserve-parent-color;
     border-radius: 2px;
     transition: transform 0.25s, opacity 0.25s;
 }
@@ -1030,6 +1031,7 @@ strong {
     width: 56px;
     height: 56px;
     background: #25D366;
+    forced-color-adjust: none;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1422,6 +1424,7 @@ dialog#lb-dialog::backdrop {
     height: 7px;
     border-radius: 50%;
     background: oklch(100% 0 0 / 0.35);
+    forced-color-adjust: preserve-parent-color;
     transition: background 0.2s, transform 0.2s;
 }
 
