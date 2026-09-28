@@ -1072,11 +1072,11 @@ strong {
 }
 
 .reveal.from-left {
-    transform: translateX(-40px);
+    transform: translateX(-20px);
 }
 
 .reveal.from-right {
-    transform: translateX(40px);
+    transform: translateX(20px);
 }
 
 .reveal.scale-in {
@@ -1172,7 +1172,7 @@ strong {
 @keyframes heroPhotoEnter {
     from {
         opacity: 0;
-        transform: translateX(30px) scale(0.97);
+        transform: translateX(20px) scale(0.97);
     }
     to {
         opacity: 1;
