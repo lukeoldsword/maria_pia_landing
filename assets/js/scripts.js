@@ -18,7 +18,6 @@ mobileMenu.querySelectorAll("a").forEach(a => {
 // Smooth scroll
 // document.querySelectorAll("a[href^=\"#\"]").forEach(a => {
 //     a.addEventListener("click", e => {
-//         console.log("Smooth scroll");
 //         const href = a.getAttribute("href");
 //         if (href === "#") return;
 //         const target = document.querySelector(href);
@@ -168,7 +167,6 @@ bookingForm.addEventListener("submit", e => {
     }
 
     function openDialog(index) {
-        console.log("Opening dialog for gallery item", index);
         buildItems();
         goTo(index);
         dialog.showModal();
@@ -187,7 +185,6 @@ bookingForm.addEventListener("submit", e => {
 
     // Attach click/keyboard to gallery items
     document.querySelectorAll("[data-lightbox]").forEach((el, i) => {
-        console.log("Attaching event listeners to gallery item", i);
         el.addEventListener("click", () => openDialog(i));
         el.addEventListener("keydown", e => {
             if (e.key === "Enter" || e.key === " ") {
