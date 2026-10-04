@@ -667,6 +667,46 @@ strong {
     text-decoration: none;
 }
 
+.social-text {
+    margin-top: 16px;
+}
+
+.booking-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 28px;
+
+    padding: 14px 24px;
+    border-radius: 8px;
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+
+    background: linear-gradient(
+            45deg,
+            #f58529,
+            #dd2a7b,
+            #8134af,
+            #515bd4
+    );
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-instagram:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.booking-instagram svg {
+    flex-shrink: 0;
+}
+
 .booking-alt-text {
     font-size: 13px;
     color: var(--muted);
